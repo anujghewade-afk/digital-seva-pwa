@@ -1,0 +1,10 @@
+{
+  "name": "Digital Seva Training",
+  "short_name": "Digital Seva",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2878c8",
+  "description": "Training on DigiLocker, Aadhaar and PAN services",
+  "icons": []
+}

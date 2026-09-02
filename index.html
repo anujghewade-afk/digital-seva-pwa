@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Seva Training</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2878c8">
+</head>
+
+<body>
+
+    <div class="home-container">
+
+        <!-- Welcome Section -->
+        <header class="home-header">
+
+            <div class="home-icon">🇮🇳</div>
+
+            <h1>Digital Seva Training</h1>
+
+            <p>
+                Learn important digital government services
+                step by step.
+            </p>
+
+        </header>
+
+
+        <!-- Training Section -->
+        <section class="home-training">
+
+            <h2>Choose Your Training</h2>
+
+            <p class="section-description">
+                Select a service to start learning.
+            </p>
+
+
+            <div class="service-grid">
+
+                <!-- DigiLocker -->
+                <div class="service-card">
+
+                    <div class="card-icon">🔐</div>
+
+                    <h3>DigiLocker</h3>
+
+                    <p>
+                        Learn how to access and manage
+                        digital documents.
+                    </p>
+
+                    <button onclick="window.location.href='digilocker.html'">
+                        Start Training →
+                    </button>
+
+                </div>
+
+
+                <!-- Aadhaar -->
+                <div class="service-card">
+
+                    <div class="card-icon">🪪</div>
+
+                    <h3>Aadhaar</h3>
+
+                    <p>
+                        Learn about important Aadhaar
+                        online services.
+                    </p>
+
+                    <button onclick="window.location.href='aadhaar.html'">
+                        Start Training →
+                    </button>
+
+                </div>
+
+
+                <!-- PAN -->
+                <div class="service-card">
+
+                    <div class="card-icon">💳</div>
+
+                    <h3>PAN Services</h3>
+
+                    <p>
+                        Learn about PAN applications,
+                        updates and services.
+                    </p>
+
+                    <button onclick="window.location.href='pan.html'">
+                        Start Training →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Safety Section -->
+        <section class="home-safety">
+
+            <h2>🔒 Stay Safe Online</h2>
+
+            <p>
+                Never share your OTP, password or sensitive
+                personal information with unknown people.
+            </p>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="home-footer">
+
+            <p>
+                Digital Seva Training | Educational Project
+            </p>
+
+        </footer>
+
+    </div>
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => {
+                    console.log("Service Worker registered successfully");
+                })
+                .catch(error => {
+                    console.log("Service Worker registration failed:", error);
+                });
+        });
+    }
+</script>
+
+</body>
+
+</html>
